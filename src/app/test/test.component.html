@@ -1,0 +1,23 @@
+<app-navbar></app-navbar>
+<div class="container">
+    <p>hello {{name}}</p>
+    <button class="btn-primary" (click)="hello (name)" >Click Me</button>
+
+<ul *ngFor="let bookname of booklist">
+    <li>{{bookname}}</li>
+</ul>
+<ul *ngFor="let res of userList">
+    <li>{{res.name}}</li>
+</ul>
+<div *ngIf="mycondition">
+    Simple text
+</div>
+
+<div *ngIf="booklist.length==0"  class="alert alert-warning">
+ No book Found
+</div>
+
+<div *ngIf="booklist.length>0"  class="alert alert-success">
+    books Exists
+   </div>
+</div>
